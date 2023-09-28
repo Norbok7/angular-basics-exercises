@@ -7,16 +7,21 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
 
+  counter: number = 0;
 
-  constructor(){
-    let i: number =0;
-
+  increment() {
+    this.counter++;
   }
 
-  incrementUp(){
-  return i++;
+  decrement() {
+    if (this.counter > 0) {
+      this.counter--;
+    }
   }
-};
+}
+
+
+
 
 
 
